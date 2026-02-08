@@ -90,7 +90,7 @@ const Chat = () => {
                 return next
             })
         })
-        socket.on("typing-stop-user",({socketId,username})=>{
+        socket.on("typing-stop-user",({socketId})=>{
             setTypingUsers(prev => {
                 const next = new Map(prev)
                 next.delete(socketId)

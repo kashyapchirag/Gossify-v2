@@ -1,5 +1,5 @@
-import axios from 'axios'
-import React, { useState } from 'react'
+import api from '../api/axios'
+import { useState } from 'react'
 import { toast } from 'react-toastify'
 
 //@ts-ignore
@@ -16,7 +16,7 @@ const CreateRoomModal = ({setIsModalOpen,setRooms,rooms}) => {
             return
         }
         try {
-            const res = await axios.post('/api/createroom',{newRoom})
+            const res = await api.post('/api/createroom',{newRoom})
             toast.success(res.data.message)
             // setRooms(prev=>[...prev,newRoom])
         } catch (error:any) {

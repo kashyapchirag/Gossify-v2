@@ -1,7 +1,7 @@
-import React, { useEffect,useState } from 'react'
+import { useEffect,useState } from 'react'
 import { useNavigate, useOutletContext } from 'react-router-dom'
 import CreateRoomModal from '../components/CreateRoomModal'
-import axios from 'axios'
+import api from '../api/axios'
 import { toast } from 'react-toastify'
 import socket from '../socket/socket'
 
@@ -19,7 +19,7 @@ const Rooms = () => {
     
     const fetchRooms = async()=>{
         try {
-            const res = await axios.get('/api/getrooms')
+            const res = await api.get('/api/getrooms')
             res.data.allRooms.forEach((element:any) => {
                 const newRoom = element.name
                 if(!rooms.includes(newRoom)){
