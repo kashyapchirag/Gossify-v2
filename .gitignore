@@ -1,0 +1,71 @@
+# ========================
+# LOGS (existing)
+# ========================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ========================
+# DEPENDENCIES (existing + extended)
+# ========================
+node_modules
+**/node_modules/
+
+# ========================
+# BUILD OUTPUTS (existing + extended)
+# ========================
+dist
+dist-ssr
+build
+**/dist/
+**/build/
+
+# ========================
+# ENV FILES (important)
+# ========================
+.env
+.env.*
+*.local
+client/.env
+client/.env.*
+server/.env
+server/.env.*
+
+# ========================
+# VITE / REACT
+# ========================
+client/.vite/
+client/dist/
+
+# ========================
+# SERVER
+# ========================
+server/logs/
+server/uploads/
+
+# ========================
+# TYPESCRIPT
+# ========================
+*.tsbuildinfo
+
+# ========================
+# ESLINT
+# ========================
+.eslintcache
+
+# ========================
+# EDITOR DIRECTORIES AND FILES (existing)
+# ========================
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

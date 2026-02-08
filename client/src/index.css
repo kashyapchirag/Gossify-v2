@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+.bg{
+    background-image: url("/bg.jpg");
+    background-size: contain;
+    background-position: center;
+}
+
+.bg2{
+    background-image: url("/background.png");
+    background-size: contain;
+    background-position: center;
+}
+
+.btn-hover:hover {
+    background: rgba(20, 49, 1, 0.911);
+}
+
+/* glassmorphism */
+.glass {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    /* Safari */
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.glass-button {
+    background: rgba(48, 119, 2, 0.911);
+}
+
+.glass-strong {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* border: 2px solid rgba(255, 255, 255, 0.35); */
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
+}
+
+.glass-room {
+    background: rgba(188, 212, 180, 0.911);
+}
+
+.glass-me {
+    background: rgba(70, 164, 3, 0.45);
+}
+.glass-other {
+    background: rgba(139, 137, 137, 0.35);
+}
+.glass-join {
+    background: rgba(24, 55, 2, 0.45);
+}
+.glass-left {
+    background: rgba(193, 93, 93, 0.35);
+}
+.hyphens {
+    word-break: break-word;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
