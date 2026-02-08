@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@supports not (backdrop-filter: blur(10px)) {
+    .glass {
+        background: rgba(255, 255, 255, 0.75);
+    }
+}
+
+
 .bg{
     background-image: url("/bg.jpg");
     background-size: contain;
