@@ -242,7 +242,11 @@ const Chat = () => {
                 <div
                     className="typing refined glass backdrop-blur-[12px] w-full h-[9%] sm:rounded-b-[1.4rem] flex justify-between items-center p-4 gap-[0.6rem] text-[1rem]">
 
-                    <input onClick={()=>{scrollIntooView()}} onInput={typing} onKeyDown={(e)=>{if(e.key=="Enter") onSend()}} onChange={(e)=>setText(e.target.value)} value={text} id="inputText" className="glass-other rounded-[5rem] border border-zinc-200 p-4 w-[88%] h-10"
+                    <input onClick={()=>{
+                        setTimeout(() => {
+                            {scrollIntooView()}
+                        }, 200);
+                    }} onInput={typing} onKeyDown={(e)=>{if(e.key=="Enter") onSend()}} onChange={(e)=>setText(e.target.value)} value={text} id="inputText" className="glass-other rounded-[5rem] border border-zinc-200 p-4 w-[88%] h-10"
                         type="text" placeholder="Type a message..."/>
                     <button onClick={onSend} id="btn"
                         className="bg-green-500 text-white h-10 w-[12%] glass glass-button rounded-[1.4rem] flex justify-center items-center text-center cursor-pointer"><img
